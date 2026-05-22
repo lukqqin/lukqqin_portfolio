@@ -472,24 +472,27 @@ nav {
 
     position: absolute;
 
-    left: 60px;
+    left: 70px;
 
-    bottom: 60px;
+    bottom: 70px;
 
     z-index: 10;
 
-    max-width: 900px;
+    max-width: 850px;
 }
-
 .about-overlay h1 {
 
     font-family: 'Bodoni Moda', serif;
 
-    font-size: clamp(70px, 8vw, 140px);
+    font-size: clamp(72px, 6vw, 120px);
 
-    line-height: 0.88;
+    line-height: 0.92;
 
     color: #111;
+
+    max-width: 900px;
+
+    letter-spacing: -2px;
 }
 
 /* ABOUT MOBILE */
