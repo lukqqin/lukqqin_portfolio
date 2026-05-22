@@ -689,7 +689,7 @@ nav {
 
     min-height: 100vh;
 
-    padding: 100px 60px;
+    padding: 80px 60px;
 
     display: flex;
 
@@ -798,7 +798,7 @@ nav {
 
     .contact-page {
 
-        padding: 40px 25px 80px 25px;
+        padding: 20px 25px 80px 25px;
     }
 
     .contact-page h1 {
