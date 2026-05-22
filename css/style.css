@@ -439,7 +439,7 @@ nav {
 
     width: 100%;
 
-    height: 100vh;
+    min-height: 100vh;
 
     overflow: hidden;
 }
@@ -448,9 +448,11 @@ nav {
 
 .about-image {
 
+    position: relative;
+
     width: 100%;
 
-    height: 100%;
+    height: 100vh;
 }
 
 .about-image img {
@@ -461,10 +463,10 @@ nav {
 
     object-fit: cover;
 
-    opacity: 0.35;
+    opacity: 0.32;
 }
 
-/* TEXT OVERLAY */
+/* OVERLAY */
 
 .about-overlay {
 
@@ -474,21 +476,23 @@ nav {
 
     bottom: 60px;
 
-    z-index: 5;
+    z-index: 10;
+
+    max-width: 900px;
 }
 
 .about-overlay h1 {
 
     font-family: 'Bodoni Moda', serif;
 
-    font-size: 110px;
+    font-size: clamp(70px, 8vw, 140px);
 
     line-height: 0.88;
 
     color: #111;
 }
 
-/* MOBILE */
+/* ABOUT MOBILE */
 
 @media (max-width: 900px) {
 
@@ -496,19 +500,26 @@ nav {
 
         left: 25px;
 
-        bottom: 40px;
+        bottom: 35px;
+
+        max-width: 90%;
     }
 
     .about-overlay h1 {
 
-        font-size: 58px;
+        font-size: 56px;
 
         line-height: 0.9;
     }
 
+    .about-image {
+
+        height: 100vh;
+    }
+
     .about-image img {
 
-        opacity: 0.28;
+        opacity: 0.26;
     }
 
 }
