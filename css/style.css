@@ -680,3 +680,87 @@ nav {
     }
 
 }
+
+/* CONTACT PAGE */
+
+.contact-page {
+
+    min-height: 100vh;
+
+    padding: 120px 60px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.contact-page h1 {
+
+    font-family: 'Bodoni Moda', serif;
+
+    font-size: 92px;
+
+    line-height: 0.92;
+
+    max-width: 900px;
+
+    margin-top: 20px;
+
+    margin-bottom: 60px;
+}
+
+.contact-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.contact-info a {
+
+    text-decoration: none;
+
+    color: #111;
+
+    font-size: 18px;
+
+    letter-spacing: 1px;
+
+    transition: 0.35s ease;
+}
+
+.contact-info a:hover {
+
+    color: #8b0000;
+
+    transform: translateX(6px);
+}
+
+/* CONTACT MOBILE */
+
+@media (max-width: 900px) {
+
+    .contact-page {
+
+        padding: 40px 25px 80px 25px;
+    }
+
+    .contact-page h1 {
+
+        font-size: 58px;
+
+        line-height: 0.95;
+
+        margin-bottom: 40px;
+    }
+
+    .contact-info a {
+
+        font-size: 17px;
+    }
+
+}
