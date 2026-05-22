@@ -496,6 +496,19 @@ nav {
 
 @media (max-width: 900px) {
 
+    .about-description {
+
+    margin-top: 30px;
+
+    max-width: 100%;
+}
+
+    .about-description p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
     .about-overlay {
 
         left: 25px;
@@ -522,4 +535,22 @@ nav {
         opacity: 0.26;
     }
 
+}
+
+/* ABOUT DESCRIPTION */
+
+.about-description {
+
+    margin-top: 40px;
+
+    max-width: 520px;
+}
+
+.about-description p {
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    color: #222;
 }
