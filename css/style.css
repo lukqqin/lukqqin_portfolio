@@ -47,22 +47,26 @@ body {
 
 .nav-links {
 
-    display: flex;
+    display: flex !important;
 
     align-items: center;
 
     gap: 35px;
+
+    list-style: none;
 }
 
 .nav-links a {
 
-    text-decoration: none;
+    text-decoration: none !important;
 
-    color: #111;
+    color: #111 !important;
 
     font-size: 13px;
 
     letter-spacing: 2px;
+
+    font-family: 'Inter', sans-serif;
 
     transition: 0.3s ease;
 }
@@ -71,7 +75,10 @@ body {
 
     color: #8b0000;
 }
+nav {
 
+    all: unset;
+}
 /* BURGER BUTTON */
 
 .menu-button {
