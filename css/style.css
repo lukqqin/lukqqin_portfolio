@@ -486,8 +486,6 @@ nav {
     z-index: 1;
 
     overflow: hidden;
-
-    pointer-events: none;
 }
 
 .about-image img {
@@ -498,11 +496,26 @@ nav {
 
     object-fit: cover;
 
-    opacity: 0.12;
+    opacity: 0.10;
 
-    filter: grayscale(10%);
+    filter: grayscale(20%);
 
     transform: scale(1.05);
+}
+
+/* DARK OVERLAY */
+
+.about-page::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(245,245,242,0.70);
+
+    z-index: 2;
 }
 
 /* CONTENT */
@@ -511,7 +524,7 @@ nav {
 
     position: relative;
 
-    z-index: 2;
+    z-index: 3;
 
     max-width: 900px;
 }
@@ -527,8 +540,6 @@ nav {
     margin-top: 20px;
 
     margin-bottom: 40px;
-
-    max-width: 900px;
 }
 
 .about-text {
@@ -549,4 +560,34 @@ nav {
     line-height: 1.9;
 
     color: #333;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .about-page {
+
+        padding: 140px 25px 60px 25px;
+    }
+
+    .about-content h1 {
+
+        font-size: 58px;
+
+        line-height: 0.9;
+    }
+
+    .about-text {
+
+        max-width: 100%;
+    }
+
+    .about-text p {
+
+        font-size: 17px;
+
+        line-height: 1.8;
+    }
+
 }
