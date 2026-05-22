@@ -1,4 +1,7 @@
-﻿* {
+﻿html {
+    scroll-behavior: smooth;
+}
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -199,4 +202,17 @@ nav a:hover {
         columns: 1;
     }
 
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }

@@ -16,8 +16,30 @@ galleryImages.forEach(image => {
 
 });
 
-fullscreen.addEventListener("click", () => {
+if(fullscreen){
 
-    fullscreen.classList.remove("active");
+    fullscreen.addEventListener("click", () => {
+
+        fullscreen.classList.remove("active");
+
+    });
+
+}
+
+const hiddenElements = document.querySelectorAll(".hidden");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
 
 });
+
+hiddenElements.forEach(el => observer.observe(el));
