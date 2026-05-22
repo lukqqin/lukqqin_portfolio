@@ -926,46 +926,48 @@ nav {
 
 /* WIDTHS */
 
+.illustrator {
+
+    max-width: 50%;
+}
+
+.blender {
+
+    max-width: 50%;
+}
+
 .photoshop {
-ыы
-    max-width: 95%;
+
+    max-width: 40%;
 }
 
-.lightroom {
+.indesign {
 
-    max-width: 90%;
+    max-width: 40%;
 }
 
-.figma {
 
-    max-width: 78%;
-}
-
-.maya {
-
-    max-width: 55%;
-}
 
 /* ANIMATION */
 
+.illustrator.active {
+
+    width: 50%;
+}
+
+.blender.active {
+
+    width: 50%;
+}
+
 .photoshop.active {
 
-    width: 95%;
+    width: 40%;
 }
 
-.lightroom.active {
+.indesign.active {
 
-    width: 90%;
-}
-
-.figma.active {
-
-    width: 78%;
-}
-
-.maya.active {
-
-    width: 55%;
+    width: 40%;
 }
 
 /* MOBILE */
