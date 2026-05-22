@@ -1,0 +1,129 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f2;
+    color: #111;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100%;
+    padding: 30px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #111;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #8b0000;
+}
+
+.hero {
+    min-height: 85vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 40px 60px;
+    gap: 60px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.small-text {
+    color: #8b0000;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.hero-text h1 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 82px;
+    line-height: 0.95;
+    margin-bottom: 30px;
+}
+
+.description {
+    max-width: 500px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.hero-image {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 550px;
+    height: 750px;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 52px;
+    }
+
+    .hero-image img {
+        height: auto;
+    }
+}
