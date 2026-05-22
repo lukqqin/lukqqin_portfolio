@@ -437,28 +437,20 @@ nav {
 
     position: relative;
 
-    min-height: 100vh;
+    width: 100%;
 
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    padding: 60px;
+    height: 100vh;
 
     overflow: hidden;
 }
 
-/* BACKGROUND IMAGE */
+/* IMAGE */
 
 .about-image {
 
-    position: absolute;
+    width: 100%;
 
-    inset: 0;
-
-    z-index: 1;
+    height: 100%;
 }
 
 .about-image img {
@@ -469,100 +461,54 @@ nav {
 
     object-fit: cover;
 
-    opacity: 0.22;
-
-    filter: grayscale(10%);
+    opacity: 0.35;
 }
 
-/* DARK LIGHT OVERLAY */
+/* TEXT OVERLAY */
 
-.about-page::after {
-
-    content: "";
+.about-overlay {
 
     position: absolute;
 
-    inset: 0;
+    left: 60px;
 
-    background: rgba(245,245,242,0.45);
+    bottom: 60px;
 
-    z-index: 2;
+    z-index: 5;
 }
 
-/* CONTENT */
-
-.about-content {
-
-    position: relative;
-
-    z-index: 3;
-
-    text-align: center;
-
-    max-width: 1000px;
-}
-
-.about-content h1 {
+.about-overlay h1 {
 
     font-family: 'Bodoni Moda', serif;
 
-    font-size: 120px;
+    font-size: 110px;
 
     line-height: 0.88;
 
-    margin-top: 20px;
-
-    margin-bottom: 40px;
-}
-
-.about-text {
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    gap: 20px;
-}
-
-.about-text p {
-
-    font-size: 18px;
-
-    line-height: 1.8;
-
-    color: #222;
-
-    max-width: 600px;
+    color: #111;
 }
 
 /* MOBILE */
 
 @media (max-width: 900px) {
 
-    .about-page {
+    .about-overlay {
 
-        padding: 120px 25px 60px 25px;
+        left: 25px;
+
+        bottom: 40px;
     }
 
-    .about-image img {
+    .about-overlay h1 {
 
-        opacity: 0.18;
-    }
-
-    .about-content h1 {
-
-        font-size: 56px;
+        font-size: 58px;
 
         line-height: 0.9;
     }
 
-    .about-text p {
+    .about-image img {
 
-        font-size: 17px;
-
-        line-height: 1.7;
+        opacity: 0.28;
     }
 
 }
