@@ -131,37 +131,43 @@ nav a:hover {
     }
 }
 .gallery-page {
-    padding: 60px;
+    padding: 40px 60px;
 }
 
 .gallery-title {
     font-family: 'Bodoni Moda', serif;
-    font-size: 64px;
+    font-size: 52px;
     margin-bottom: 60px;
 }
 
 .gallery-grid {
-    columns: 3 300px;
-    column-gap: 20px;
-}
+    display: grid;
 
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 18px;
+}
 .gallery-grid img {
     width: 100%;
-    margin-bottom: 20px;
+    height: 420px;
+
+    object-fit: cover;
 
     cursor: pointer;
 
-    transition: 0.4s ease;
-
-    break-inside: avoid;
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease;
 }
-
 .gallery-grid img:hover {
     opacity: 0.9;
     transform: scale(1.01);
 }
 
 .fullscreen {
+    backdrop-filter: blur(6px);
+    padding: 30px;
     position: fixed;
 
     inset: 0;
@@ -215,4 +221,11 @@ nav a:hover {
 .show {
     opacity: 1;
     transform: translateY(0);
+}
+.gallery-grid img:nth-child(3n) {
+    height: 520px;
+}
+
+.gallery-grid img:nth-child(4n) {
+    height: 350px;
 }
