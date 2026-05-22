@@ -127,3 +127,76 @@ nav a:hover {
         height: auto;
     }
 }
+.gallery-page {
+    padding: 60px;
+}
+
+.gallery-title {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 64px;
+    margin-bottom: 60px;
+}
+
+.gallery-grid {
+    columns: 3 300px;
+    column-gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+
+    transition: 0.4s ease;
+
+    break-inside: avoid;
+}
+
+.gallery-grid img:hover {
+    opacity: 0.9;
+    transform: scale(1.01);
+}
+
+.fullscreen {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.92);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+}
+
+.fullscreen img {
+    max-width: 90%;
+    max-height: 90%;
+
+    object-fit: contain;
+}
+
+.fullscreen.active {
+    display: flex;
+}
+
+@media (max-width: 900px) {
+
+    .gallery-page {
+        padding: 30px;
+    }
+
+    .gallery-title {
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+
+    .gallery-grid {
+        columns: 1;
+    }
+
+}
