@@ -58,6 +58,9 @@ if(menuButton){
 
 }
 
+
+
+
 const skillFills = document.querySelectorAll('.skill-fill');
 
 const skillObserver = new IntersectionObserver((entries) => {
@@ -66,7 +69,14 @@ const skillObserver = new IntersectionObserver((entries) => {
 
         if (entry.isIntersecting) {
 
-            entry.target.classList.add('active');
+            const delay = entry.target.dataset.delay;
+
+            setTimeout(() => {
+
+                entry.target.classList.add('active');
+
+            }, delay);
+
         }
 
     });

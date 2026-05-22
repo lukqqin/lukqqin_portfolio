@@ -921,13 +921,13 @@ nav {
 
     background: #111;
 
-    transition: width 3.8s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: width 7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* WIDTHS */
 
 .photoshop {
-
+ыы
     max-width: 95%;
 }
 
