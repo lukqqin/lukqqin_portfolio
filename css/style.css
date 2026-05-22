@@ -366,6 +366,34 @@ nav {
         letter-spacing: 4px;
     }
 
+    /* ABOUT MOBILE */
+
+.about-page {
+
+    flex-direction: column;
+
+    padding: 30px 25px;
+
+    gap: 50px;
+}
+
+.about-left h1 {
+
+    font-size: 48px;
+}
+
+.about-right {
+
+    padding-top: 0;
+}
+
+.about-right p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
     /* HERO MOBILE */
 
     .hero {
@@ -428,4 +456,59 @@ nav {
 
         opacity: 1;
     }
+}
+
+/* ABOUT PAGE */
+
+.about-page {
+
+    min-height: 80vh;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 80px;
+
+    padding: 80px 60px;
+}
+
+.about-left {
+
+    flex: 1;
+}
+
+.about-left h1 {
+
+    font-family: 'Bodoni Moda', serif;
+
+    font-size: 72px;
+
+    line-height: 1;
+
+    margin-top: 20px;
+}
+
+.about-right {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+
+    padding-top: 80px;
+}
+
+.about-right p {
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    color: #444;
+
+    max-width: 500px;
 }
