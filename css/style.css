@@ -539,7 +539,7 @@ nav {
 
         opacity: 0.26;
     }
-
+}
     
 /* SKILLS PAGE */
 
@@ -631,7 +631,7 @@ nav {
 
     .skills-page {
 
-        padding: 120px 25px 60px 25px;
+        padding: 40px 25px 60px 25px;
     }
 
     .skills-page h1 {
@@ -647,14 +647,14 @@ nav {
 
     .skills-grid {
 
-    display: grid;
+        display: grid;
 
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
 
-    gap: 28px;
+        gap: 28px;
 
-    margin-top: 20px;
-}
+        margin-top: 20px;
+    }
 
     .skill-card {
 
