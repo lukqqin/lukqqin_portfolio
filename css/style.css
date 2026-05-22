@@ -370,38 +370,26 @@ nav {
 
 .about-page {
 
-    grid-template-columns: 1fr;
-
-    padding: 25px;
-
-    gap: 40px;
+    padding: 120px 25px 60px 25px;
 }
 
-.about-image img {
+.about-image {
 
-    height: auto;
+    opacity: 0.10;
 }
 
 .about-content h1 {
 
-    font-size: 22vw;
+    font-size: 64px;
 
     line-height: 0.9;
 
     max-width: 100%;
-
-    overflow-wrap: break-word;
-
-    word-break: break-word;
 }
 
-.about-content {
-
-    width: 100%;
+.about-text {
 
     max-width: 100%;
-
-    overflow: hidden;
 }
 
 .about-text p {
@@ -479,47 +467,65 @@ nav {
 
 .about-page {
 
+    position: relative;
+
     min-height: 100vh;
 
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
+    display: flex;
 
     align-items: center;
 
-    gap: 80px;
+    padding: 80px 60px;
 
-    padding: 60px;
+    overflow: hidden;
+}
+
+/* BACKGROUND IMAGE */
+
+.about-image {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    opacity: 0.14;
 }
 
 .about-image img {
 
     width: 100%;
 
-    height: 750px;
+    height: 100%;
 
     object-fit: cover;
+}
 
-    box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+/* CONTENT */
+
+.about-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 900px;
 }
 
 .about-content h1 {
 
     font-family: 'Bodoni Moda', serif;
 
-    font-size: 64px;
+    font-size: 110px;
 
-    line-height: 1;
+    line-height: 0.9;
 
     margin-top: 20px;
 
     margin-bottom: 40px;
 
-    max-width: 700px;
-
-    overflow-wrap: break-word;
-
-    word-wrap: break-word;
+    max-width: 900px;
 }
 
 .about-text {
@@ -529,15 +535,15 @@ nav {
     flex-direction: column;
 
     gap: 25px;
+
+    max-width: 520px;
 }
 
 .about-text p {
 
-    font-size: 17px;
+    font-size: 18px;
 
     line-height: 1.9;
 
-    color: #444;
-
-    max-width: 500px;
+    color: #333;
 }
