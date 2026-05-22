@@ -57,3 +57,26 @@ if(menuButton){
     });
 
 }
+
+const skillFills = document.querySelectorAll('.skill-fill');
+
+const skillObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add('active');
+        }
+
+    });
+
+}, {
+    threshold: 0.4
+});
+
+skillFills.forEach(skill => {
+
+    skillObserver.observe(skill);
+
+});

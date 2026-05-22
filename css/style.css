@@ -856,13 +856,15 @@ nav {
 
     font-family: 'Bodoni Moda', serif;
 
-    font-size: 92px;
+    font-size: 120px;
 
-    line-height: 0.9;
+    line-height: 0.88;
 
     margin-top: 20px;
 
-    margin-bottom: 70px;
+    margin-bottom: 90px;
+
+    max-width: 1000px;
 }
 
 /* SOFTWARE ITEMS */
@@ -900,9 +902,11 @@ nav {
 
     width: 100%;
 
-    height: 1px;
+    height: 10px;
 
-    background: rgba(0,0,0,0.12);
+    border-radius: 100px;
+
+    background: rgba(0,0,0,0.08);
 
     overflow: hidden;
 }
@@ -913,9 +917,11 @@ nav {
 
     width: 0;
 
+    border-radius: 100px;
+
     background: #111;
 
-    animation: fillSkill 2s ease forwards;
+    transition: width 3.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* WIDTHS */
@@ -942,17 +948,24 @@ nav {
 
 /* ANIMATION */
 
-@keyframes fillSkill {
+.photoshop.active {
 
-    from {
+    width: 95%;
+}
 
-        width: 0;
-    }
+.lightroom.active {
 
-    to {
+    width: 90%;
+}
 
-        width: 100%;
-    }
+.figma.active {
+
+    width: 78%;
+}
+
+.maya.active {
+
+    width: 55%;
 }
 
 /* MOBILE */
@@ -964,12 +977,17 @@ nav {
         margin-top: 100px;
     }
 
-    .software-section h2 {
+.software-section h2 {
 
-        font-size: 64px;
+    font-size: 72px;
 
-        margin-bottom: 50px;
-    }
+    margin-bottom: 60px;
+}
+
+.skill-line {
+
+    height: 8px;
+}
 
     .software-skills {
 
