@@ -534,8 +534,37 @@ nav {
 
         opacity: 0.26;
     }
+/* SKILLS MOBILE */
+
+.skills-page {
+
+    padding: 120px 25px 60px 25px;
+}
+
+.skills-page h1 {
+
+    font-size: 58px;
+
+    margin-bottom: 50px;
+}
+
+.skills-grid {
+
+    grid-template-columns: 1fr;
+}
+
+.skill-card {
+
+    padding: 30px;
+}
+
+.skill-card h2 {
+
+    font-size: 30px;
+}
 
 }
+
 
 /* ABOUT DESCRIPTION */
 
@@ -553,4 +582,75 @@ nav {
     line-height: 1.9;
 
     color: #222;
+}
+
+/* SKILLS PAGE */
+
+.skills-page {
+
+    min-height: 100vh;
+
+    padding: 80px 60px;
+}
+
+.skills-page h1 {
+
+    font-family: 'Bodoni Moda', serif;
+
+    font-size: 100px;
+
+    line-height: 0.9;
+
+    margin-top: 20px;
+
+    margin-bottom: 70px;
+}
+
+/* GRID */
+
+.skills-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+/* CARD */
+
+.skill-card {
+
+    padding: 40px;
+
+    border: 1px solid rgba(0,0,0,0.08);
+
+    background: rgba(255,255,255,0.5);
+
+    backdrop-filter: blur(8px);
+
+    transition: 0.4s ease;
+}
+
+.skill-card:hover {
+
+    transform: translateY(-4px);
+
+    border-color: rgba(139,0,0,0.25);
+}
+
+.skill-card h2 {
+
+    font-family: 'Bodoni Moda', serif;
+
+    font-size: 36px;
+
+    margin-bottom: 20px;
+}
+
+.skill-card p {
+
+    line-height: 1.8;
+
+    color: #444;
 }
