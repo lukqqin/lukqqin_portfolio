@@ -647,12 +647,14 @@ nav {
 
     .skills-grid {
 
-        grid-template-columns: 1fr;
+    display: grid;
 
-        gap: 28px;
+    grid-template-columns: 1fr;
 
-        margin-top: 20px;
-    }
+    gap: 28px;
+
+    margin-top: 20px;
+}
 
     .skill-card {
 
