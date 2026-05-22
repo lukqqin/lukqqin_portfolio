@@ -153,9 +153,10 @@ nav a:hover {
 }
 .gallery-grid img {
     width: 100%;
-    height: 420px;
+    height: auto;
 
-    object-fit: cover;
+    object-fit: contain;
+    background: #e9e9e5;
 
     cursor: pointer;
 
@@ -208,7 +209,7 @@ nav a:hover {
     }
 
     .gallery-grid {
-        columns: 1;
+        grid-template-columns: 1fr;
     }
 
 }
@@ -225,12 +226,8 @@ nav a:hover {
     opacity: 1;
     transform: translateY(0);
 }
-.gallery-grid img:nth-child(3n) {
-    height: 520px;
-}
-
-.gallery-grid img:nth-child(4n) {
-    height: 350px;
+.gallery-grid img {
+    display: block;
 }
 @media (max-width: 900px) {
 
