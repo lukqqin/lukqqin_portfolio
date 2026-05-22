@@ -623,18 +623,18 @@ nav {
 
 .skills-grid {
 
-    display: grid;
+    grid-template-columns: 1fr;
 
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 25px;
+    gap: 18px;
 }
 
 /* CARD */
 
 .skill-card {
 
-    padding: 40px;
+    padding: 26px;
+
+    min-height: auto;
 
     border: 1px solid rgba(0,0,0,0.08);
 
@@ -654,16 +654,16 @@ nav {
 
 .skill-card h2 {
 
-    font-family: 'Bodoni Moda', serif;
+    font-size: 42px;
 
-    font-size: 36px;
+    line-height: 0.95;
 
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .skill-card p {
 
-    line-height: 1.8;
+    font-size: 16px;
 
-    color: #444;
+    line-height: 1.7;
 }
