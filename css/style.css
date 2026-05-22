@@ -366,33 +366,6 @@ nav {
         letter-spacing: 4px;
     }
 
-/* ABOUT MOBILE */
-
-.about-page {
-
-    padding: 120px 25px 60px 25px;
-}
-
-.about-content h1 {
-
-    font-size: 54px;
-
-    line-height: 0.92;
-
-    max-width: 100%;
-}
-
-.about-text {
-
-    max-width: 100%;
-}
-
-.about-text p {
-
-    font-size: 17px;
-
-    line-height: 1.8;
-}
 
     /* HERO MOBILE */
 
@@ -470,7 +443,9 @@ nav {
 
     align-items: center;
 
-    padding: 80px 60px;
+    justify-content: center;
+
+    padding: 60px;
 
     overflow: hidden;
 }
@@ -484,8 +459,6 @@ nav {
     inset: 0;
 
     z-index: 1;
-
-    overflow: hidden;
 }
 
 .about-image img {
@@ -496,16 +469,14 @@ nav {
 
     object-fit: cover;
 
-    opacity: 0.10;
+    opacity: 0.22;
 
-    filter: grayscale(20%);
-
-    transform: scale(1.05);
+    filter: grayscale(10%);
 }
 
-/* DARK OVERLAY */
+/* DARK LIGHT OVERLAY */
 
-.about-page::before {
+.about-page::after {
 
     content: "";
 
@@ -513,7 +484,7 @@ nav {
 
     inset: 0;
 
-    background: rgba(245,245,242,0.70);
+    background: rgba(245,245,242,0.45);
 
     z-index: 2;
 }
@@ -526,16 +497,18 @@ nav {
 
     z-index: 3;
 
-    max-width: 900px;
+    text-align: center;
+
+    max-width: 1000px;
 }
 
 .about-content h1 {
 
     font-family: 'Bodoni Moda', serif;
 
-    font-size: 110px;
+    font-size: 120px;
 
-    line-height: 0.9;
+    line-height: 0.88;
 
     margin-top: 20px;
 
@@ -548,18 +521,20 @@ nav {
 
     flex-direction: column;
 
-    gap: 25px;
+    align-items: center;
 
-    max-width: 520px;
+    gap: 20px;
 }
 
 .about-text p {
 
     font-size: 18px;
 
-    line-height: 1.9;
+    line-height: 1.8;
 
-    color: #333;
+    color: #222;
+
+    max-width: 600px;
 }
 
 /* MOBILE */
@@ -568,26 +543,26 @@ nav {
 
     .about-page {
 
-        padding: 140px 25px 60px 25px;
+        padding: 120px 25px 60px 25px;
+    }
+
+    .about-image img {
+
+        opacity: 0.18;
     }
 
     .about-content h1 {
 
-        font-size: 58px;
+        font-size: 56px;
 
         line-height: 0.9;
-    }
-
-    .about-text {
-
-        max-width: 100%;
     }
 
     .about-text p {
 
         font-size: 17px;
 
-        line-height: 1.8;
+        line-height: 1.7;
     }
 
 }
