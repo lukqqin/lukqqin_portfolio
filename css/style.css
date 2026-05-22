@@ -384,9 +384,13 @@ nav {
 
 .about-content h1 {
 
-    font-size: 28px;
+    font-size: 22vw;
 
-    line-height: 1.1;
+    line-height: 0.9;
+
+    max-width: 100%;
+
+    overflow-wrap: break-word;
 
     word-break: break-word;
 }
@@ -394,6 +398,8 @@ nav {
 .about-content {
 
     width: 100%;
+
+    max-width: 100%;
 
     overflow: hidden;
 }
@@ -508,8 +514,12 @@ nav {
     margin-top: 20px;
 
     margin-bottom: 40px;
-    
+
     max-width: 700px;
+
+    overflow-wrap: break-word;
+
+    word-wrap: break-word;
 }
 
 .about-text {
