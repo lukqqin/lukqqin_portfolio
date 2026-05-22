@@ -463,7 +463,7 @@ nav {
 
     object-fit: cover;
 
-    object-position: center top;
+    object-position: center 30%;
 
     opacity: 0.32;
 }
