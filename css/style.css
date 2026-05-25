@@ -137,15 +137,18 @@ body {
 
   width: 100%;
 
+  max-width: 1180px;
+
+  margin: 0 auto;
+
   display: grid;
 
   grid-template-columns:
-  minmax(320px, 520px)
-  520px;
+  460px 420px;
 
   justify-content: space-between;
 
-  gap: 120px;
+  gap: 80px;
 
   align-items: center;
 
@@ -176,13 +179,15 @@ body {
 
 h1 {
 
-  font-size: clamp(72px, 10vw, 120px);
+  font-size: clamp(64px, 7vw, 110px);
 
   line-height: 0.9;
 
   font-weight: 600;
 
   letter-spacing: -0.06em;
+
+  white-space: nowrap;
 
 }
 
@@ -232,13 +237,17 @@ h1 {
 
   width: 100%;
 
+  max-width: 420px;
+
   aspect-ratio: 4 / 5;
 
   overflow: hidden;
 
-  border-radius: 20px;
+  border-radius: 18px;
 
   background: var(--surface);
+
+  justify-self: end;
 
 }
 
@@ -517,6 +526,10 @@ h1 {
 
 .work-grid {
 
+  max-width: 1180px;
+
+  margin: 0 auto;
+
   display: grid;
 
   grid-template-columns:
@@ -580,7 +593,7 @@ h1 {
 
   grid-column: span 12;
 
-  aspect-ratio: 16 / 8;
+  aspect-ratio: 16 / 10;
 
 }
 
