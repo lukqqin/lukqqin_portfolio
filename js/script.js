@@ -39,7 +39,7 @@ modal.addEventListener("click", (e) => {
   }
 });
 
-  /* CAROUSEL */
+/* CAROUSEL */
 
 const items =
 document.querySelectorAll(".carousel-item");
@@ -50,33 +50,40 @@ document.querySelector(".next");
 const prevBtn =
 document.querySelector(".prev");
 
-let current = 0;
+let current = 1;
 
 function updateCarousel() {
 
-  items.forEach((item, index) => {
+  items.forEach(item => {
 
-    item.classList.remove("active");
-
-    if (index === current) {
-
-      item.classList.add("active");
-
-    }
+    item.classList.remove(
+      "active",
+      "prev",
+      "next"
+    );
 
   });
+
+  items[current].classList.add("active");
+
+  const prevIndex =
+    (current - 1 + items.length)
+    % items.length;
+
+  const nextIndex =
+    (current + 1)
+    % items.length;
+
+  items[prevIndex].classList.add("prev");
+  items[nextIndex].classList.add("next");
 
 }
 
 nextBtn.addEventListener("click", () => {
 
-  current++;
-
-  if (current >= items.length) {
-
-    current = 0;
-
-  }
+  current =
+  (current + 1)
+  % items.length;
 
   updateCarousel();
 
@@ -84,13 +91,9 @@ nextBtn.addEventListener("click", () => {
 
 prevBtn.addEventListener("click", () => {
 
-  current--;
-
-  if (current < 0) {
-
-    current = items.length - 1;
-
-  }
+  current =
+  (current - 1 + items.length)
+  % items.length;
 
   updateCarousel();
 

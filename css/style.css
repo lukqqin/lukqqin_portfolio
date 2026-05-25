@@ -531,51 +531,15 @@ h1 {
 
 .carousel-wrapper {
 
-  max-width: 1280px;
+  position: relative;
+
+  max-width: 1400px;
 
   margin: 0 auto;
 
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  gap: 32px;
-
   overflow: hidden;
 
-}
-
-/* BUTTONS */
-
-.carousel-btn {
-
-  width: 52px;
-  height: 52px;
-
-  border-radius: 50%;
-
-  background: var(--surface);
-
-  border: 1px solid var(--border);
-
-  color: var(--text);
-
-  font-size: 20px;
-
-  flex-shrink: 0;
-
-  transition: var(--transition);
-
-}
-
-.carousel-btn:hover {
-
-  background: var(--accent);
-
-  color: #fff;
-
-  transform: scale(1.05);
+  padding-block: 40px;
 
 }
 
@@ -586,11 +550,9 @@ h1 {
   display: flex;
 
   align-items: center;
+  justify-content: center;
 
-  gap: 24px;
-
-  transition:
-  transform 500ms ease;
+  gap: 32px;
 
 }
 
@@ -598,21 +560,23 @@ h1 {
 
 .carousel-item {
 
-  width: 260px;
+  position: relative;
+
+  width: 240px;
 
   flex-shrink: 0;
 
-  border-radius: 22px;
+  border-radius: 24px;
 
   overflow: hidden;
 
-  opacity: 0.35;
+  opacity: 0.25;
 
-  transform: scale(0.9);
+  transform: scale(0.82);
 
   transition:
-  transform 500ms ease,
-  opacity 500ms ease;
+  transform 700ms ease,
+  opacity 700ms ease;
 
 }
 
@@ -620,7 +584,7 @@ h1 {
 
   width: 100%;
 
-  height: 420px;
+  height: 520px;
 
   object-fit: cover;
 
@@ -631,7 +595,7 @@ h1 {
 
 }
 
-/* ACTIVE */
+/* ACTIVE CENTER IMAGE */
 
 .carousel-item.active {
 
@@ -641,11 +605,24 @@ h1 {
 
   transform: scale(1);
 
+  z-index: 2;
+
 }
 
 .carousel-item.active img {
 
-  height: 620px;
+  height: 680px;
+
+}
+
+/* SIDE ITEMS */
+
+.carousel-item.prev,
+.carousel-item.next {
+
+  opacity: 0.55;
+
+  transform: scale(0.9);
 
 }
 
@@ -653,7 +630,66 @@ h1 {
 
 .carousel-item:hover img {
 
-  transform: scale(1.03);
+  transform: scale(1.04);
+
+}
+
+/* BUTTONS */
+
+.carousel-btn {
+
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+
+  border: 1px solid var(--border);
+
+  background: rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+
+  color: var(--text);
+
+  font-size: 22px;
+
+  z-index: 10;
+
+  transition: var(--transition);
+
+}
+
+.carousel-btn:hover {
+
+  background: var(--accent);
+
+  color: white;
+
+  transform:
+  translateY(-50%)
+  scale(1.05);
+
+}
+
+/* LEFT */
+
+.prev {
+
+  left: 24px;
+
+}
+
+/* RIGHT */
+
+.next {
+
+  right: 24px;
 
 }
 
@@ -661,49 +697,9 @@ h1 {
 
 @media (max-width: 980px) {
 
-  .carousel-wrapper {
-
-    gap: 12px;
-
-  }
-
-  .carousel-item {
-
-    width: 180px;
-
-  }
-
-  .carousel-item img {
-
-    height: 300px;
-
-  }
-
-  .carousel-item.active {
-
-    width: 240px;
-
-  }
-
-  .carousel-item.active img {
-
-    height: 380px;
-
-  }
-
-}
-
-@media (max-width: 640px) {
-
-  .carousel-btn {
-
-    display: none;
-
-  }
-
   .carousel-track {
 
-    gap: 12px;
+    gap: 16px;
 
   }
 
@@ -715,19 +711,68 @@ h1 {
 
   .carousel-item img {
 
-    height: 220px;
+    height: 260px;
 
   }
 
   .carousel-item.active {
 
-    width: 190px;
+    width: 220px;
 
   }
 
   .carousel-item.active img {
 
-    height: 300px;
+    height: 360px;
+
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .carousel-btn {
+
+    width: 44px;
+    height: 44px;
+
+    font-size: 16px;
+
+  }
+
+  .prev {
+
+    left: 8px;
+
+  }
+
+  .next {
+
+    right: 8px;
+
+  }
+
+  .carousel-item {
+
+    width: 110px;
+
+  }
+
+  .carousel-item img {
+
+    height: 180px;
+
+  }
+
+  .carousel-item.active {
+
+    width: 170px;
+
+  }
+
+  .carousel-item.active img {
+
+    height: 280px;
 
   }
 
