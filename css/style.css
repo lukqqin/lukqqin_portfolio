@@ -128,7 +128,8 @@ body {
   display: flex;
   align-items: center;
 
-  padding-block: 120px;
+  padding-top: 40px;
+  padding-bottom: 120px;
 
 }
 
@@ -139,9 +140,12 @@ body {
   display: grid;
 
   grid-template-columns:
-  1fr 520px;
+  minmax(320px, 520px)
+  520px;
 
-  gap: 80px;
+  justify-content: space-between;
+
+  gap: 120px;
 
   align-items: center;
 
@@ -155,6 +159,8 @@ body {
   flex-direction: column;
 
   gap: 32px;
+
+  max-width: 520px;
 
 }
 
